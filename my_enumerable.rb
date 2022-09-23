@@ -5,7 +5,7 @@ module MyEnumerable
     end
     true
   end
-  
+
   def any?
     @list.each do |element|
       return true if yield element
@@ -14,8 +14,8 @@ module MyEnumerable
   end
 
   def filter
-    result =[]
-   @list.each do |element|
+    result = []
+    @list.each do |element|
       result << element if yield element
     end
     result
